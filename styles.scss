@@ -399,23 +399,54 @@ h1 {
 
 // Project Page
 .page__projects {
-  @extend .page__skill;
+  background-color: wheat;
+  display: flex;
   background-color: #fff;
   height: 1vh;
+  flex-direction: column;
 }
 
 .projects__title {
-  @extend .skill__title;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 60px;
+  height: 100px;
+  width: 60%;
+  margin-top: 150px;
+  margin-left: 120px;
+  padding-left: 20px;
+  line-height: 1em;
   width: 80%;
-  padding-left: 50px;
+}
+
+.projects {
+  height: 50%;
+  display: flex;
+}
+
+.projects div {
+  flex: 1;
 }
 
 .projects__left {
-  @extend .skill__left;
+  // margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.projects__left img {
+  width: 500px;
+  height: 333px;
+  background-size: cover;
+  background-position: center;
 }
 
 .projects__right {
-  @extend .skill__right;
+  display: flex;
+  // min-width: 300px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-size: 18px;
   line-height: 1.4em;
 }
@@ -445,8 +476,8 @@ h1 {
     padding-left: 0;
     // text-align: center;
   }
-  .projects__right {
-    margin-top: -500px;
+  .projects {
+    flex-direction: column;
   }
 }
 

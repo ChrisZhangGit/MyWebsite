@@ -266,22 +266,22 @@ h1 {
   }
 }
 /* Skill Page */
-.page__skill, .page__projects {
+.page__skill {
   background-color: wheat;
   display: flex;
 }
 
-.page__skill div, .page__projects div {
+.page__skill div {
   flex: 1;
 }
 
-.skill__left, .projects__left {
+.skill__left {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.skill__title, .projects__title {
+.skill__title {
   font-family: "Josefin Sans", sans-serif;
   font-size: 60px;
   height: 130px;
@@ -291,7 +291,7 @@ h1 {
   line-height: 1em;
 }
 
-.skill__left p, .projects__left p {
+.skill__left p {
   color: #868e96;
   margin-bottom: 20px;
 }
@@ -331,19 +331,19 @@ h1 {
   margin: 0 auto;
 }
 
-.skill__right, .projects__right {
+.skill__right {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.skill__right p, .projects__right p {
+.skill__right p {
   width: 80%;
   margin-bottom: 10px;
 }
 
-.skill__right p span, .projects__right p span {
+.skill__right p span {
   font-weight: bold;
   display: block;
 }
@@ -354,22 +354,22 @@ h1 {
 }
 
 @media screen and (max-width: 870px) {
-  .page__skill, .page__projects {
+  .page__skill {
     flex-direction: column;
     margin-top: 150px;
     height: 1500px;
   }
 
-  .skill__left, .projects__left {
+  .skill__left {
     margin-top: -80px;
   }
 
-  .skill__right, .projects__right {
+  .skill__right {
     text-align: center;
     justify-content: flex-start;
   }
 
-  .skill__title, .projects__title {
+  .skill__title {
     font-size: 40px;
     height: 60px;
     text-align: center;
@@ -378,16 +378,53 @@ h1 {
   }
 }
 .page__projects {
+  background-color: wheat;
+  display: flex;
   background-color: #fff;
   height: 1vh;
+  flex-direction: column;
 }
 
 .projects__title {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 60px;
+  height: 100px;
+  width: 60%;
+  margin-top: 150px;
+  margin-left: 120px;
+  padding-left: 20px;
+  line-height: 1em;
   width: 80%;
-  padding-left: 50px;
+}
+
+.projects {
+  height: 50%;
+  display: flex;
+}
+
+.projects div {
+  flex: 1;
+}
+
+.projects__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects__left img {
+  width: 500px;
+  height: 333px;
+  background-size: cover;
+  background-position: center;
 }
 
 .projects__right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-size: 18px;
   line-height: 1.4em;
 }
@@ -416,8 +453,8 @@ h1 {
     padding-left: 0;
   }
 
-  .projects__right {
-    margin-top: -500px;
+  .projects {
+    flex-direction: column;
   }
 }
 /* Contact Information Page */
